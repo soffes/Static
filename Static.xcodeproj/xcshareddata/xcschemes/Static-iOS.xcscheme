@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21826AB31B3F51A100AA9641"
-               BuildableName = "StaticTests.xctest"
-               BlueprintName = "StaticTests"
+               BuildableName = "StaticTests-iOS.xctest"
+               BlueprintName = "StaticTests-iOS"
                ReferencedContainer = "container:Static.xcodeproj">
             </BuildableReference>
          </TestableReference>

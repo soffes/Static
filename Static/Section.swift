@@ -1,4 +1,8 @@
-import UIKit
+#if os(OSX)
+    import AppKit
+#else
+    import UIKit
+#endif
 
 /// Representation of a table section.
 public struct Section: Hashable, Equatable {
@@ -11,7 +15,7 @@ public struct Section: Hashable, Equatable {
         case Title(String)
 
         /// Custom view for the header or footer. The height will be the view's `bounds.height`.
-        case View(UIView)
+        case CustomView(View)
 
         public var title: String? {
             switch self {
@@ -20,9 +24,9 @@ public struct Section: Hashable, Equatable {
             }
         }
 
-        public var view: UIView? {
+        public var view: View? {
             switch self {
-            case .View(let extremityView): return extremityView
+            case .CustomView(let extremityView): return extremityView
             default: return nil
             }
         }

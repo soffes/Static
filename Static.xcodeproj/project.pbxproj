@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2166E2CD1D13B77000470366 /* Static.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2166E2C31D13B77000470366 /* Static.framework */; };
+		2166E2DA1D13B7CF00470366 /* Static.h in Headers */ = {isa = PBXBuildFile; fileRef = 21826AAD1B3F51A100AA9641 /* Static.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2166E2DB1D13B7DC00470366 /* RowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366AB2EF1B4EE1A7002C4717 /* RowTests.swift */; };
+		2166E2DC1D13B7DC00470366 /* SectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366AB2F01B4EE1A7002C4717 /* SectionTests.swift */; };
+		2166E2DE1D13B7E200470366 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21826AC61B3F51D000AA9641 /* Section.swift */; };
+		2166E2DF1D13B7E200470366 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21826AC51B3F51D000AA9641 /* Row.swift */; };
+		2166E2E01D13B94B00470366 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36799F981B41C857009A9D16 /* CellType.swift */; };
+		2166E2E41D13BA8600470366 /* PlainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166E2E31D13BA8600470366 /* PlainCell.swift */; };
+		2166E2E61D13BAE600470366 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166E2E51D13BAE600470366 /* CrossPlatform.swift */; };
+		2166E2E71D13BAE600470366 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166E2E51D13BAE600470366 /* CrossPlatform.swift */; };
+		2166E2E91D13BBB500470366 /* AccessoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166E2E81D13BBB500470366 /* AccessoryTests.swift */; };
 		21826AAE1B3F51A100AA9641 /* Static.h in Headers */ = {isa = PBXBuildFile; fileRef = 21826AAD1B3F51A100AA9641 /* Static.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21826AB51B3F51A100AA9641 /* Static.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21826AAA1B3F51A100AA9641 /* Static.framework */; };
 		21826AC91B3F51D000AA9641 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21826AC41B3F51D000AA9641 /* ButtonCell.swift */; };
@@ -33,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2166E2CE1D13B77000470366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21826AA11B3F51A100AA9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2166E2C21D13B77000470366;
+			remoteInfo = "Static-macOS";
+		};
 		21826AB61B3F51A100AA9641 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21826AA11B3F51A100AA9641 /* Project object */;
@@ -64,6 +82,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2166E2C31D13B77000470366 /* Static.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Static.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2166E2CC1D13B77000470366 /* StaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2166E2E31D13BA8600470366 /* PlainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCell.swift; sourceTree = "<group>"; };
+		2166E2E51D13BAE600470366 /* CrossPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		2166E2E81D13BBB500470366 /* AccessoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryTests.swift; sourceTree = "<group>"; };
 		21826AAA1B3F51A100AA9641 /* Static.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Static.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21826AAD1B3F51A100AA9641 /* Static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Static.h; sourceTree = "<group>"; };
 		21826AAF1B3F51A100AA9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +116,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2166E2BF1D13B77000470366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166E2C91D13B77000470366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166E2CD1D13B77000470366 /* Static.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21826AA61B3F51A100AA9641 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +157,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2166E2E11D13BA7300470366 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				21826AC81B3F51D000AA9641 /* Value1Cell.swift */,
+				21826ACE1B3F534000AA9641 /* Value2Cell.swift */,
+				21826AD01B3F535A00AA9641 /* SubtitleCell.swift */,
+				21826AC41B3F51D000AA9641 /* ButtonCell.swift */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2166E2E21D13BA7800470366 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2166E2E31D13BA8600470366 /* PlainCell.swift */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
 		21826AA01B3F51A100AA9641 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +192,8 @@
 				21826AAA1B3F51A100AA9641 /* Static.framework */,
 				21826AB41B3F51A100AA9641 /* StaticTests.xctest */,
 				36748D4F1B5034EC0046F207 /* Example.app */,
+				2166E2C31D13B77000470366 /* Static.framework */,
+				2166E2CC1D13B77000470366 /* StaticTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				21826AAD1B3F51A100AA9641 /* Static.h */,
+				2166E2E51D13BAE600470366 /* CrossPlatform.swift */,
 				21826AC71B3F51D000AA9641 /* DataSource.swift */,
 				36C8FE9A1B4EECF30004DA5B /* TableViewController.swift */,
 				21826AC61B3F51D000AA9641 /* Section.swift */,
@@ -158,10 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				36799F981B41C857009A9D16 /* CellType.swift */,
-				21826AC81B3F51D000AA9641 /* Value1Cell.swift */,
-				21826ACE1B3F534000AA9641 /* Value2Cell.swift */,
-				21826AD01B3F535A00AA9641 /* SubtitleCell.swift */,
-				21826AC41B3F51D000AA9641 /* ButtonCell.swift */,
+				2166E2E11D13BA7300470366 /* iOS */,
+				2166E2E21D13BA7800470366 /* macOS */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -170,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				366AB2EF1B4EE1A7002C4717 /* RowTests.swift */,
+				2166E2E81D13BBB500470366 /* AccessoryTests.swift */,
 				366AB2F01B4EE1A7002C4717 /* SectionTests.swift */,
 				366AB2F11B4EE1A7002C4717 /* DataSourceTests.swift */,
 				366AB2EE1B4EE1A7002C4717 /* Info.plist */,
@@ -195,6 +254,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2166E2C01D13B77000470366 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166E2DA1D13B7CF00470366 /* Static.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21826AA71B3F51A100AA9641 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +273,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2166E2C21D13B77000470366 /* Static-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2166E2D81D13B77000470366 /* Build configuration list for PBXNativeTarget "Static-macOS" */;
+			buildPhases = (
+				2166E2BE1D13B77000470366 /* Sources */,
+				2166E2BF1D13B77000470366 /* Frameworks */,
+				2166E2C01D13B77000470366 /* Headers */,
+				2166E2C11D13B77000470366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static-macOS";
+			productName = "Static-macOS";
+			productReference = 2166E2C31D13B77000470366 /* Static.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2166E2CB1D13B77000470366 /* Static-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2166E2D91D13B77000470366 /* Build configuration list for PBXNativeTarget "Static-macOSTests" */;
+			buildPhases = (
+				2166E2C81D13B77000470366 /* Sources */,
+				2166E2C91D13B77000470366 /* Frameworks */,
+				2166E2CA1D13B77000470366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2166E2CF1D13B77000470366 /* PBXTargetDependency */,
+			);
+			name = "Static-macOSTests";
+			productName = "Static-macOSTests";
+			productReference = 2166E2CC1D13B77000470366 /* StaticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		21826AA91B3F51A100AA9641 /* Static-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21826ABE1B3F51A100AA9641 /* Build configuration list for PBXNativeTarget "Static-iOS" */;
@@ -224,9 +327,9 @@
 			productReference = 21826AAA1B3F51A100AA9641 /* Static.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		21826AB31B3F51A100AA9641 /* StaticTests */ = {
+		21826AB31B3F51A100AA9641 /* StaticTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21826AC11B3F51A100AA9641 /* Build configuration list for PBXNativeTarget "StaticTests" */;
+			buildConfigurationList = 21826AC11B3F51A100AA9641 /* Build configuration list for PBXNativeTarget "StaticTests-iOS" */;
 			buildPhases = (
 				21826AB01B3F51A100AA9641 /* Sources */,
 				21826AB11B3F51A100AA9641 /* Frameworks */,
@@ -237,14 +340,14 @@
 			dependencies = (
 				21826AB71B3F51A100AA9641 /* PBXTargetDependency */,
 			);
-			name = StaticTests;
+			name = "StaticTests-iOS";
 			productName = StaticTests;
 			productReference = 21826AB41B3F51A100AA9641 /* StaticTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		36748D4E1B5034EC0046F207 /* Example */ = {
+		36748D4E1B5034EC0046F207 /* Example-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36748D5E1B5034EC0046F207 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 36748D5E1B5034EC0046F207 /* Build configuration list for PBXNativeTarget "Example-iOS" */;
 			buildPhases = (
 				36748D4B1B5034EC0046F207 /* Sources */,
 				36748D4C1B5034EC0046F207 /* Frameworks */,
@@ -256,7 +359,7 @@
 			dependencies = (
 				363129C61B50354E0024E339 /* PBXTargetDependency */,
 			);
-			name = Example;
+			name = "Example-iOS";
 			productName = Example;
 			productReference = 36748D4F1B5034EC0046F207 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -267,10 +370,16 @@
 		21826AA11B3F51A100AA9641 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Venmo;
 				TargetAttributes = {
+					2166E2C21D13B77000470366 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2166E2CB1D13B77000470366 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					21826AA91B3F51A100AA9641 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -296,13 +405,29 @@
 			projectRoot = "";
 			targets = (
 				21826AA91B3F51A100AA9641 /* Static-iOS */,
-				21826AB31B3F51A100AA9641 /* StaticTests */,
-				36748D4E1B5034EC0046F207 /* Example */,
+				21826AB31B3F51A100AA9641 /* StaticTests-iOS */,
+				36748D4E1B5034EC0046F207 /* Example-iOS */,
+				2166E2C21D13B77000470366 /* Static-macOS */,
+				2166E2CB1D13B77000470366 /* Static-macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2166E2C11D13B77000470366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166E2CA1D13B77000470366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21826AA81B3F51A100AA9641 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,11 +455,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2166E2BE1D13B77000470366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166E2DF1D13B7E200470366 /* Row.swift in Sources */,
+				2166E2E71D13BAE600470366 /* CrossPlatform.swift in Sources */,
+				2166E2E01D13B94B00470366 /* CellType.swift in Sources */,
+				2166E2E41D13BA8600470366 /* PlainCell.swift in Sources */,
+				2166E2DE1D13B7E200470366 /* Section.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166E2C81D13B77000470366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166E2DB1D13B7DC00470366 /* RowTests.swift in Sources */,
+				2166E2DC1D13B7DC00470366 /* SectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21826AA51B3F51A100AA9641 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				21826ACB1B3F51D000AA9641 /* Section.swift in Sources */,
+				2166E2E61D13BAE600470366 /* CrossPlatform.swift in Sources */,
 				21826ACC1B3F51D000AA9641 /* DataSource.swift in Sources */,
 				21826ACA1B3F51D000AA9641 /* Row.swift in Sources */,
 				21826AC91B3F51D000AA9641 /* ButtonCell.swift in Sources */,
@@ -352,6 +499,7 @@
 			files = (
 				366AB2F31B4EE1A7002C4717 /* RowTests.swift in Sources */,
 				366AB2F41B4EE1A7002C4717 /* SectionTests.swift in Sources */,
+				2166E2E91D13BBB500470366 /* AccessoryTests.swift in Sources */,
 				366AB2F51B4EE1A7002C4717 /* DataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +518,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2166E2CF1D13B77000470366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2166E2C21D13B77000470366 /* Static-macOS */;
+			targetProxy = 2166E2CE1D13B77000470366 /* PBXContainerItemProxy */;
+		};
 		21826AB71B3F51A100AA9641 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 21826AA91B3F51A100AA9641 /* Static-iOS */;
@@ -394,6 +547,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2166E2D41D13B77000470366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Static/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static;
+				PRODUCT_NAME = Static;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2166E2D51D13B77000470366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Static/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static;
+				PRODUCT_NAME = Static;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2166E2D61D13B77000470366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Static/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static.tests;
+				PRODUCT_NAME = StaticTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2166E2D71D13B77000470366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Static/Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static.tests;
+				PRODUCT_NAME = StaticTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		21826ABC1B3F51A100AA9641 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,7 +754,7 @@
 				INFOPLIST_FILE = Static/Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StaticTests;
 			};
 			name = Debug;
 		};
@@ -537,7 +764,7 @@
 				INFOPLIST_FILE = Static/Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.static.tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StaticTests;
 			};
 			name = Release;
 		};
@@ -549,7 +776,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 			};
 			name = Debug;
 		};
@@ -561,13 +788,29 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.venmo.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2166E2D81D13B77000470366 /* Build configuration list for PBXNativeTarget "Static-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2166E2D41D13B77000470366 /* Debug */,
+				2166E2D51D13B77000470366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2166E2D91D13B77000470366 /* Build configuration list for PBXNativeTarget "Static-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2166E2D61D13B77000470366 /* Debug */,
+				2166E2D71D13B77000470366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		21826AA41B3F51A100AA9641 /* Build configuration list for PBXProject "Static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -586,7 +829,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21826AC11B3F51A100AA9641 /* Build configuration list for PBXNativeTarget "StaticTests" */ = {
+		21826AC11B3F51A100AA9641 /* Build configuration list for PBXNativeTarget "StaticTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21826AC21B3F51A100AA9641 /* Debug */,
@@ -595,7 +838,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36748D5E1B5034EC0046F207 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		36748D5E1B5034EC0046F207 /* Build configuration list for PBXNativeTarget "Example-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36748D5F1B5034EC0046F207 /* Debug */,

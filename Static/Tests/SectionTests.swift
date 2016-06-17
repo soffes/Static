@@ -1,8 +1,7 @@
 import XCTest
 import Static
 
-class SectionTests: XCTestCase {
-
+final class SectionTests: XCTestCase {
     func testInit() {
         let rows = [Row(text: "Row")]
         let section = Section(UUID: "1234", header: "Header", rows: rows, footer: "Footer")
@@ -13,9 +12,9 @@ class SectionTests: XCTestCase {
     }
 
     func testExtermityViews() {
-        let header = UIView()
-        let footer = UIView()
-        let section = Section(header: .View(header), footer: .View(footer))
+        let header = View()
+        let footer = View()
+        let section = Section(header: .CustomView(header), footer: .CustomView(footer))
         XCTAssertEqual(header, section.header!.view!)
         XCTAssertEqual(footer, section.footer!.view!)
     }

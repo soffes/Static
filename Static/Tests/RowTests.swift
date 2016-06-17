@@ -1,53 +1,29 @@
 import XCTest
 import Static
 
-class RowTests: XCTestCase {
-
+final class RowTests: XCTestCase {
     func testInit() {
         let selection: Selection = {}
         let context: Row.Context = [
             "Hello": "world"
         ]
 
-        let row = Row(text: "Title", detailText: "Detail", selection: selection, cellClass: ButtonCell.self, context: context, UUID: "1234")
+        #if os(OSX)
+            let row = Row(text: "Title", selection: selection, context: context, UUID: "1234")
+        #else
+            let row = Row(text: "Title", detailText: "Detail", selection: selection, context: context, UUID: "1234")
+            XCTAssertEqual("Detail", row.detailText!)
+        #endif
+        
         XCTAssertEqual("1234", row.UUID)
         XCTAssertEqual("Title", row.text!)
-        XCTAssertEqual("Detail", row.detailText!)
         XCTAssertEqual("world", row.context?["Hello"] as? String)
     }
 
     func testInitWithImage() {
-        let image = UIImage(named: "Setting")
+        let image = Image(named: "Setting")
         let row = Row(image: image)
         XCTAssertEqual(row.image, image)
-    }
-
-    func testInitWithAccessoryType() {
-        let accessory: Row.Accessory = .Checkmark
-
-        let row = Row(accessory: accessory)
-
-        XCTAssertTrue(row.accessory == accessory)
-    }
-
-    func testInitWithSelectableAccessoryType() {
-        let selection: Selection = {}
-        let accessory: Row.Accessory = .DetailButton(selection)
-
-        let row = Row(accessory: accessory)
-
-        XCTAssertEqual(row.accessory, accessory)
-        XCTAssertTrue(row.accessory.selection != nil)
-    }
-
-    func testInitWithAccessoryView() {
-        let view = UIView()
-        let accessory: Row.Accessory = .View(view)
-
-        let row = Row(accessory: accessory)
-
-        XCTAssertEqual(row.accessory, accessory)
-        XCTAssertEqual(row.accessory.view!, view)
     }
 
     func testHashable() {
