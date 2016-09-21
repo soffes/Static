@@ -28,6 +28,18 @@ class ViewController: TableViewController {
         
         tableView.rowHeight = 50
 
+        let sectionHeader = UILabel(frame: CGRect(x: 0, y: 0, width: 320, height: 32))
+        sectionHeader.text = "Section header"
+        sectionHeader.font = UIFont(name: "Zapfino", size: 16)
+        sectionHeader.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        sectionHeader.textColor = .red
+
+        let sectionFooter = UILabel(frame: CGRect(x: 0, y: 0, width: 320, height: 32))
+        sectionFooter.text = "Section footer"
+        sectionFooter.font = UIFont(name: "Noteworthy", size: 12)
+        sectionFooter.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        sectionFooter.textColor = .blue
+
         dataSource.sections = [
             Section(header: "Styles", rows: [
                 Row(text: "Value 1", detailText: "Detail", cellClass: Value1Cell.self),
@@ -69,7 +81,11 @@ class ViewController: TableViewController {
                         self.showAlert(title: "Deleted.")
                     })
                 ])
-            ])
+            ]),
+            Section(header: .view(sectionHeader), rows: [
+                Row(text: "Custom header ⬆️"),
+                Row(text: "Custom footer ⬇️")
+            ], footer: .view(sectionFooter))
         ]
     }
 

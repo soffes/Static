@@ -199,11 +199,11 @@ extension DataSource: UITableViewDataSource {
         return self.section(forIndex: section)?.header?._title
     }
 
-    public func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return self.section(forIndex: section)?.header?._view
     }
 
-    public func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return self.section(forIndex: section)?.header?.viewHeight ?? UITableViewAutomaticDimension
     }
 
@@ -211,11 +211,11 @@ extension DataSource: UITableViewDataSource {
         return self.section(forIndex: section)?.footer?._title
     }
 
-    public func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return self.section(forIndex: section)?.footer?._view
     }
 
-    public func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return self.section(forIndex: section)?.footer?.viewHeight ?? UITableViewAutomaticDimension
     }
 
